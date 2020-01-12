@@ -1,0 +1,30 @@
+<!-- <hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+  <select [(ngModel)]="filStatust" >
+      <option value="eyeAll">Xem tất cả</option>
+      <option value="remembered">Đã nhớ</option>
+      <option value="forget">Chưa nhớ</option>
+    </select>
+
+  <div *ngIf="isShow">
+    <input placeholder="engLish" [(ngModel)]="engLish" />
+    <br><br>
+    <input placeholder="Vn"  [(ngModel)]="Vn"/>
+    <br><br>
+    <button (click)="addnewWord()">Thêm mới</button>
+  </div>
+   <button  (click)=" isShow = true" *ngIf="!isShow">  Thêm mới</button>
+
+<div  *ngFor="let items of arrWords" >
+  <div class="word" *ngIf="filterWord(items.memorized)">
+    <h4 [ngStyle]="{color: items.memorized % 2 ===0 ? 'red' : 'green'}"> {{items.en}}</h4>
+    <p> {{items.vn}}</p>
+      <button (click)="delete(items.id)">Delete</button>
+       <button (click)="items.memorized = !items.memorized"> {{items.memorized ? 'đã thuộc' : 'chưa thuộc' }}</button>
+  </div>
+</div> -->
+
+<app-list-perision></app-list-perision>
